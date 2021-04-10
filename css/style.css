@@ -1,0 +1,63 @@
+body {
+    background: url('../images/background/pipo-bg001a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadeInOut {
+    opacity: 1;
+    animation-name: fadeInOut;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.btn-game {
+    border-radius: 750px;
+    border-color:aliceblue;
+    border-width: 2px;
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
